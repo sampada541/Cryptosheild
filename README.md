@@ -1,5 +1,7 @@
 # Cryptosheild
 ABSTRACT
+
+
 A cutting-edge web-based encryption solution called Cryptoshield offers strong protection for
 sensitive data sent over the internet. Cryptoshield uses cutting-edge encryption methods like
 AES-256 and SHA256 to guarantee the confidentiality and integrity of data while it is being

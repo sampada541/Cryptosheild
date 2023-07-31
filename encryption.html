@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryption</title>
+  <link rel="stylesheet" href="sense.css">
+</head>
+<body>
+  
+  <header>
+    <img src="a.png" alt="Logo">
+    <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                                <li><a href="encryption.html">Encryption</a></li>
+				<li><a href="decryption.html">Decryption</a></li>
+                                
+			</ul>
+		</nav>
+  </header>
+
+  
+  <div class="container">
+    <!-- Credit Card Information section -->
+    <div class="credit-card-info">
+      <h1>Credit Card Information</h1>
+      <form id="creditCardForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+
+        <label for="cardName">Cardholder's Name:</label>
+        <input type="text" id="cardName" name="cardName" placeholder="Enter cardholder's name" required>
+
+        <label for="expiryDate">Expiration Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script>
+        $('#creditCardForm').on('submit',function(e){
+          e.preventDefault();
+  
+          $.ajax({
+            url:'data.php',
+            method:'post',
+            data: new FormData(this),  
+            contentType: false,
+            processData: false,
+            beforeSend:function(){
+              $('#submit').html('Submitting...');
+            },
+            success:function(data){
+              
+              if(data == 'success'){
+                Swal.fire(
+                  'Good job!',
+                  'Information Stored Succssfully',
+                  'success'
+                )
+              }else{
+                Swal.fire(
+                'Oops',
+                'Unable to stored information',
+                'error'
+              )
+              }
+  
+              $('#creditCardForm')[0].reset();
+              
+              }
+          })
+  
+        })
+      </script>
+  <p>Want to Decrypt the data?<a href="decryption.html" style="color:yellow;">Click Here</a></p>
+    </div>
+   </div>
+  </body>
+  </html>

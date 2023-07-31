@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decryption Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <img src="a.png" alt="Logo">
+    <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                                <li><a href="encryption.html">Encryption</a></li>
+				<li><a href="decryption.html">Decryption</a></li>
+                                
+			</ul>
+		</nav>
+  </header>
+<body>
+  <div class="container">
+  <div class="title">
+    <h1>Decryption Page</h1>
+  </div>
+    <form id="decryptForm" action="decrypted_user_info.php">
+      <label for="encryptedKey">Encrypted Key:</label>
+      <input type="text" id="encryptedKey" name="encryptedKey" required>
+      
+      <button type="submit">Decrypt</button>
+    </form>
+  </div>
+
+
+  <script src="s.js"></script>
+</body>
+</html>

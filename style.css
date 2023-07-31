@@ -1,0 +1,198 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section with logo and navigation bar */
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  max-width: 180px; /* Adjust the size of the logo */
+}
+
+/* Navigation bar */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #318CE7;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Add space between logo and navigation links */
+nav ul {
+  margin-left: 800px; /* Push the navigation links to the right side */
+}
+
+
+
+/* Header section with logo */
+header {
+  background-color: black; /* Black background for header */
+  padding: 10px 0;
+  text-align: left;
+}
+
+header img {
+  max-width: 180px; /* Adjust the size of the logo */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url('e.jpg');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
+  color: #fff; /* White text */
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Main container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Decryption Form section */
+#decryptForm {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff; /* White text */
+  max-width: 500px; /* Adjust the width as per your requirement */
+  margin-left: 20px;
+  max-height:250px;
+}
+
+#decryptForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#decryptForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #fff; /* White text on transparent background */
+  background-color: transparent; /* Transparent background for input fields */
+}
+
+#decryptForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50; /* Green background for submit button */
+  color: #fff; /* White text on green background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#decryptForm button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.title{
+  margin-top: 160px;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff; /* White text */
+  max-width: 500px; /* Adjust the width as per your requirement */
+  margin-left: 20px;
+  max-height:100px;
+}
+
+
+.decrypt {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+      color: #fff; /* White text */
+      padding: 20px;
+    }
+
+    /* Decrypted User Information section */
+    .decrypt h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+.popup {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  margin-top: 160px;
+}
+
+.popup table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #fff; /* Add a border to the whole table */
+}
+
+.popup th,
+.popup td {
+  padding: 8px;
+  text-align: center;
+}
+
+.popup th {
+  background-color: #000; /* Black background for header cells */
+  color: #fff; /* White text color for header cells */
+  border: 1px solid #fff; /* Add a border to the header cells */
+}
+
+.popup td {
+  
+  color: #fff; /* Black text color for content cells */
+  border: 1px solid #fff; /* Add a border to the content cells */
+}
+
+.popup button {
+  margin-top: 20px;
+  background-color: #4CAF50; /* Green background for button */
+  color: #fff; /* White text color for button */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+

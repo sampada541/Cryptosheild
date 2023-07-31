@@ -1,123 +1,66 @@
-# Cryptosheild
-ABSTRACT
+# CRYPTOSHEILD
+
+A cutting-edge web-based encryption solution that offers strong protection for sensitive data sent over the internet.
+Cryptoshield is a state-of-the-art web-based encryption solution that ensures strong protection for sensitive data sent over the internet. With its AES-256-CBC encryption, user-friendly interface, and secure MySQL database storage, you can trust Cryptoshield to safeguard your valuable data with ease.
 
 
-A cutting-edge web-based encryption solution called Cryptoshield offers strong protection for
-sensitive data sent over the internet. Cryptoshield uses cutting-edge encryption methods like
-AES-256 and SHA256 to guarantee the confidentiality and integrity of data while it is being
-sent. It is a crucial tool for safeguarding sensitive data in the modern digital era due to its user-
-friendly interface and secure data transmission features. Cryptoshield is a charming solution
-for protecting data against unauthorised access and online dangers thanks to collaborative
-development activities, thorough testing, and future improvements.
-To get the best performance and reliability possible, Cryptoshield underwent thorough code
-reviews and collaborative development. The effective deployment of Cryptoshield is the result
-of the team's competence in encryption techniques and safe data processing.
-The project anticipates exciting advancements like multifactor authentication, file encryption
-capabilities, and mobile application development in the future. These improvements should
-strengthen Cryptoshield's ability to protect data from new online dangers, reaffirming its status
-as a cutting-edge web-based encryption solution.
+
+## Features
+
+### Advanced Encryption Standard (AES-256-CBC): 
+Rest easy knowing that your data is encrypted using the industry-standard AES-256-CBC encryption, ensuring confidentiality and data integrity during transmission.
+
+### User-Friendly Interface: 
+Cryptoshield's intuitive interface makes encrypting and decrypting sensitive data a breeze. No technical expertise required; simply enter your data and click the buttons.
+
+### Secure MySQL Database Storage: 
+Encrypted data is stored in a MySQL database, adding an extra layer of protection against unauthorized access and potential online threats.
 
 
-1. INTRODUCTION
-Data security is a crucial component of every web-based application in this digital age.
-With its complete approach to safe online encryption, Cryptoshield promises to protect the
-confidentiality and integrity of sensitive data, including passwords, credit card numbers,
-and other personal information. The project focuses on using cutting-edge encryption
-methods and following security best practises to protect data while it is being sent.
+
+## Benefits
+
+### Data Security: 
+Shield your sensitive information from prying eyes and potential security breaches. Cryptoshield's robust encryption ensures that your data stays safe at all times.
+
+### Compliance Made Easy: 
+Cryptoshield helps you comply with data security regulations by providing a reliable encryption solution for your sensitive data.
+
+### Peace of Mind: 
+With Cryptoshield, you can be confident that your data is kept secure, allowing you to focus on what matters most.
 
 
-1.1. PROBLEM STATEMENT
-The protection of sensitive data is a serious problem in today's digital environment. The
-requirement to safeguard consumers' credit card and password information from
-unauthorised access is underscored by the rising frequency of data breaches and cyber
-threats. By offering a safe, dependable, and easy-to-use solution for encrypting and
-decrypting sensitive data, the project seeks to address this important issue.
+## How to Use
+
+ - Visit the Cryptoshield website and create an account to get started.
+
+ - Enter the sensitive data you wish to encrypt in the provided field and click the "Encrypt" button
+
+ - To decrypt the data, paste the encrypted data in the provided field and click the "Decrypt" button.
+
+## Tech Stack
+
+   - Frontend: HTML, CSS, JavaScript
+   - Backend: PHP
+   - Database: MySQL
+   - Encryption Algorithm: AES-256-CBC
+   - Hashing Algorithm: SHA256
+   - Encryption Functions: openssl_encrypt & openssl_decrypt
+   - Encoding: Base64
+
+## Benefits
+
+- Protects sensitive data from unauthorized access and online threats.
+- Makes it easy to comply with data security regulations.
+- Provides peace of mind knowing that your data is safe and secure.
 
 
-1.2. OBJECTIVE
-The following are the main goals of the CRYPTOSHIELD project:
-1. Use AES-256-CBC encryption to transmit data securely.
-2. To protect data integrity, hash your data using the SHA256 method.
-3. Create a user-friendly web-based encryption and decryption interface.
-4. Use a MySQL database to safely store encrypted data.
+## Future Plans
+
+- Multifactor Authentication: Strengthen security by adding multifactor authentication to protect user accounts.
+
+- File Encryption: Extend Cryptoshield's encryption capabilities to secure files, making it a comprehensive data protection tool.
+
+- Mobile App: Stay tuned for the release of our mobile app, allowing you to encrypt and decrypt data on the go.
 
 
-1.3. TECHNOLOGIES USED
-The project utilizes the following technologies:
-1. Frontend: HTML, CSS, JavaScript
-2. Backend: PHP
-3. Database: MySQL
-4. Encryption Algorithm: AES-256-CBC
-5. Hashing Algorithm: SHA256
-6. Encryption Functions: openssl_encrypt & openssl_decrypt
-7. Encoding: Base64
-
-
-2. SYSTEM ARCHITECTURE
-
-
-2.1. OVERVIEW
-The client-server architecture used by the CRYPTOSHIELD system is used. Through
-their web browsers, users communicate with the frontend, which sends queries to the
-PHP-based backend server. These requests are processed by the backend, which also
-interacts with the MySQL database for secure data storage and uses AES-256-CBC
-and SHA256 encryption and decryption algorithms, respectively.
-
-
-2.2. COMPONENTS
-The system consists of the following components:
-1. Frontend: The user interface built using HTML, CSS, and JavaScript for interacting
-with the system.
-2. Backend: PHP scripts that handle encryption, decryption, and database interactions.
-3. Database: MySQL database to securely store encrypted data.
-
-
-2.3. DATA FLOW
-The CRYPTOSHIELD system's data flow looks like this:
-1. The front-end interface is where users enter data.
-2. Using HTTP requests, the frontend transmits the data to the backend server.
-3. The data is encrypted using AES-256-CBC by the backend, and a SHA256 hash is
-produced to ensure data integrity.
-4. The hash and encrypted data are safely stored together in the MySQL database.
-5. The backend obtains the encrypted data from the database and uses the AES-256-CBC
-technique to decode it when decryption is necessary.
-
-
-3. FEATURES
-
-   
-3.1. AES-256-CBC Encryption
-The system uses the well-known and reliable AES-256-CBC encryption technique to
-protect data while it is being TRANSMITTED.
-
-3.2. SHA256 Hash
-Data integrity verification using SHA256 is used to create a hash that ensures the
-data is unaltered while in transit.
-
-3.3. Web-based Interface
-Users may simply encrypt and decrypt their data using the system's user-friendly
-web-based interface.
-
-3.4. Secure Data Storage
-A MySQL database stores encrypted data, adding another level of protection to
-safeguard critical data.
-
-
-4. IMPLEMENTATION
-
-   
-4.1. Encryption Module
-The encryption module is implemented in PHP and uses the AES-256-CBC
-encryption algorithm to encrypt user data securely.
-
-4.2. Decryption Module
-The decryption module, also written in PHP, allows users to decrypt their encrypted
-data using the AES-256-CBC decryption method.
-
-4.3. User Interface
-The frontend is designed using HTML, CSS, and JavaScript to provide a user-
-friendly interface for data encryption and decryption.
-
-4.4. Database Management
-The system interacts with the MySQL database for storing and retrieving encrypted
-data securely

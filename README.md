@@ -42,7 +42,7 @@ With Cryptoshield, you can be confident that your data is kept secure, allowing 
 
    - Frontend: HTML, CSS, JavaScript
    - Backend: PHP
-   - Database: MySQL
+   - Database: MySQL, XAMPP
    - Encryption Algorithm: AES-256-CBC
    - Hashing Algorithm: SHA256
    - Encryption Functions: openssl_encrypt & openssl_decrypt
